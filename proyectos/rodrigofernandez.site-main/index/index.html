@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+    <script src="newFile.js"></script>
+    <link rel="stylesheet" href="enviar_email.php">
+    <title>Rodrigo Fernandez</title>
+    <link rel="icon" href="img/logo-removebg-preview.png" type="logo" />
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <a href="#indez.html" class="logo">RF</a>
+      <!--icono del menu -->
+      <nav class="option-bar" onclick="toggleSidebar()">
+        <div class="menu">
+          <i class="bx bx-menu"></i>
+        </div>
+        <!--iconosdel menu-->
+        <div class="dropdown" id="dropdownMenu">
+          <div class="dropdown2">
+            <a href="https://www.linkedin.com/in/rodrigo-fernandez-aa265225a/"><i class='bx bxl-linkedin-square' style='color:#0132ff' ></i></a>
+            <a href="https://github.com/RodrigoFernandez1"><i class='bx bxl-github' style='color:#00007f'  ></i></a>
+            <a href="https://www.instagram.com/rodrigoo.fernandezz/"><i class='bx bxl-instagram' style='color:#e45101'  ></i></a>
+            <div class="sali-x">
+              <i class='bx bx-x'></i>
+            </div>
+          </div>
+          
+          <a href="#acerca-de" class="link">Acerca de</a>
+          <a href="#proyecto" class="link">Proyectos</a>
+          <a href="#conocimientos" class="link">Conocimientos</a>
+          <a href="#contacto" class="link">Contacto</a>
+          <a href="#cv" class="link" id="cv-1">Cv</a>
+        </div>
+      </nav>
+      <script>
+        function toggleSidebar() {
+          var sidebar = document.getElementById("dropdownMenu");
+          sidebar.classList.toggle("active");
+        }
+      </script>
+    </header>
+
+    <main class="main">
+      <h1 class="tex-1">Front-end Developer</h1>
+
+      <div class="intro">
+        <p class="text">Hola, Soy Rodrigo Fernandez,</p>
+        <div class="description">
+          <p>
+            Un Desarrollador Front-end autodidacta con mas de 2 año en la
+            creación de sitios web, con ganas de conocer y aprender mas de este
+            mundo tecnológico.
+          </p>
+        </div>
+      </div>
+
+      <section class="section">
+        <!--
+        <div class="section-2">
+          <div class="iconos">
+            (futuros iconos de diseño web)
+          </div>
+          <div class="img-1">
+            <img src="img/diseñoweb.png" alt="Front-end Development" />
+            <p class="section-text-1">Diseño Web</p>
+            <a href="https://www.figma.com/file/ubbSX7vpn90I3LvaMBB7im/portafolio-web?type=design&node-id=0%3A1&mode=design&t=9QRcexjNM6nhGShi-1"  class="butt-diseño">ver</a>
+          </div>
+        </div>-->
+
+        <div class="section-1">
+          <div class="iconos">
+            <i class="bx bxl-html5" style="color: #f79b0c"></i>
+            <i class="bx bxl-css3" style="color: #0c41f7"></i>
+            <i class="bx bxl-javascript" style="color: #f0ff1f"></i>
+            <i class="bx bx-wrench bx-tada" style="color: #ffffff"></i>
+          </div>
+          <div class="img-2">
+            <img
+              src="img/fondo-de-desarrollo.png"
+              alt="Front-end Development"
+            />
+            <p class="section-text-2">Front-end Developer</p>
+            <a href="#proyecto" class="butt-diseño">Ver</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <article class="article" id="acerca-de">
+      <div class="acerca-de">
+        <p class="article-p">Acerca de mi:</p>
+        <div class="article-tex">
+          <h6 class="article-content">
+            ¡Apasionado Desarrollador Front-end Ansioso por Colaborar! Hace dos
+            años, me sumergí en el fascinante mundo del desarrollo front-end 
+            enfrentando desafíos que se convirtieron en oportunidades
+            para crear sitios web adaptables y responsivos. Mi viaje ha sido más
+            que una travesía, ha sido un emocionante proceso de mejora
+            constante. Lo que me distingue es mi capacidad para abrazar nuevas
+            tecnologías, adaptarme a las necesidades cambiantes y aprender con
+            entusiasmo. Soy un apasionado que se enfoca con intensidad en cada
+            tarea, siempre buscando superar expectativas. Lo que realmente
+            anhelo es unirme a una empresa que comparta valores sólidos y una
+            visión clara de éxito. Estoy emocionado por la posibilidad de
+            compartir mis habilidades en un entorno donde el crecimiento, la
+            colaboración y la emoción de alcanzar metas compartidas sean el
+            corazón de todo. ¡Listo para sumergirme en un nuevo capítulo y
+            contribuir al éxito de la empresa! ¡Vamos a construir algo increíble
+            juntos!
+          </h6>
+        </div>
+      </div>
+    </article>
+
+    <aside class="aside" id="proyecto">
+      <p class="aside-p">Proyectos:</p>
+      <div class="text-container">
+        <div class="proyec-h1-lista-procye">
+          <h1 class="proyec-h1">Proyecto 1</h1>
+          <dl class="lista-proyec">
+            <dt class="lista-dt">Diseñado y pasado a codigo.</dt>
+            <dd class="lista-dd">
+              como primer proyecto esta mi portafolio, a partir que fui
+              adquiriendo mas conocimientos fue mejorando, tanto lo visual como
+              responsive.
+            </dd>
+          </dl>
+        </div>
+        <img class="img-proyec" src="img/portafolio1.png" alt="" />
+      </div>
+    </aside>
+    <hr />
+
+    <section
+      hrel="#habilidades"
+      class="conocimientos-section"
+      id="conocimientos"
+    >
+      <div class="conoci.secti">
+        <p class="conocimientos-p">Conocimientos:</p>
+        <div class="cuatro-conoci">
+          <div class="skills">
+            <i class="bx bxl-html5" style="color: #fb5f0c"></i>
+            <p>Capacidad para estructurar y diseñar contenido web.</p>
+            <span class="level">Avanzado</span>
+          </div>
+
+          <div class="skills">
+            <i class="bx bxl-css3" style="color: #0c1efb"></i>
+            <p>Diseño y estilización de páginas web.</p>
+            <span class="level">Avanzado</span>
+          </div>
+
+          <div class="skills">
+            <i class="bx bxl-javascript" style="color: #e5fb0c"></i>
+            <p>Interactividad y funcionalidad en la web.</p>
+            <span class="level">Intermedio</span>
+          </div>
+
+          <div class="skills">
+            <i class='bx bxl-git' style='color:#f34a00'  ></i>
+            <p>Gestión de versiones de código con Git.</p>
+            <span class="level">Avanzado</span>
+          </div>
+
+          <div class="skills">
+            <i class='bx bxl-github' style='color:#020202'  ></i>
+            <p>Colaboración y control de proyectos con GitHub.</p>
+            <span class="level">Avanzado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="formu-info" id="contacto">
+      <p>Contacto</p>
+      <form action="https://formsubmit.co/rodrigoo1.fernandezz@gmail.com" method="POST">
+      <form id="formularioContacto" action="enviar_email.php" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+        />
+        <input type="text" name="asunto" placeholder="Asunto" required />
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <button class="boton-formu" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <div class="mi-cv" id="cv">
+      <a
+        href="img/Rodrigo (1).pdf"
+        download="cv.pdf"
+        class="boton-descarga"
+        >Descargar CV</a
+      >
+    </div>
+
+    <hr />
+    <footer class="footer">
+      <div class="mi-footer">
+        <div class="columna1">
+          <img class="mi-img-footer" src="img/rodrigofernandez.jpg" alt="" />
+          <p class="mi-img-footer-p">
+            Soy un desarrollador Front-end con dos año de estudio autodidacta,
+            estoy entusiasmado por unirme a un equipo donde pueda aportar lo
+            aprendido y seguir creciendo en nuevas tecnologías. ¡Listo para
+            enfrentar nuevos desafíos!
+          </p>
+        </div>
+
+        <section class="redes">
+          <i class="bx bxl-linkedin-square" style="color: #1069ff">
+            <a
+              class="organi-link"
+              href="https://www.linkedin.com/in/rodrigo-fernandez-aa265225a/"
+            >
+              Mi linkedin
+            </a>
+            <p>Conectémonos en LinkedIn</p></i
+          >
+          <i class="bx bxl-twitter" style="color: #134bb9"
+            ><a href="https://twitter.com/RODRIGOfernann" class="organi-link"
+              >twitter</a
+            ></i
+          >
+
+          <i class="bx bxl-instagram" style="color: #ff7e00"
+            ><a
+              href="https://www.instagram.com/rodrigoo.fernandezz/"
+              class="organi-link"
+              >Instagram</a
+            ></i
+          >
+        </section>
+        <div class="derecho">
+          <p>copyright</p>
+          <i class="bx bx-copyright"
+            ><a href="/index.html" class="rodri"> 2024 Rodrigo Fernandez</a></i
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

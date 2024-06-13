@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: none;
+    font-family: 'poppins', sans-serif
+}
+
+:root {
+    --fondo-color: #0D1F2D;
+    --text-color: #000000;
+    --textos-color: #ffffff;
+    --decoral-color: red;
+    --header-color: #6790ca;
+}
+
+body {
+    background-color: var(--fondo-color);
+
+    margin: 0;
+    padding: 0;
+}
+
+/*configuracion de mi header*/
+.header {
+    background-color: var(--header-color);
+
+    top: 0;
+    left: 0;
+    padding: 49px;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    text-decoration: none;
+    font-size: 2.6rem;
+    color: white;
+    font-weight: 600;
+    margin-left: 29px;
+    transition: 0.35s ease;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.option-bar a {
+    padding: 40px;
+    gap: 100%;
+    list-style: none;
+}
+
+.link {
+    color: var(--text-color);
+    padding: 0.5rem;
+    position: relative;
+    color: var(--textos-color);
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--fondo-color);
+    border-radius: 5px;
+    transform: scale(0);
+    transition: all 0.6s ease;
+}
+
+.link::before {
+    bottom: 0;
+    left: 0;
+}
+
+.link:hover::before {
+    transform: scale(1);
+}
+
+/*fin de configuracion*/
+
+
+/*configuracion de mi main*/
+.main {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+}
+
+.tex-1 {
+    margin: o;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    height: 100%;
+    color: var(--header-color);
+}
+
+.tex-presec {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--textos-color);
+}
+
+.tex-p {
+    font-size: 230%;
+}
+
+.tex-6 {
+    font-size: 1.10eem;
+    max-width: 800px;
+    margin: 10px;
+}
+
+.tex-p,
+.tex-h6 {
+    margin: 10px;
+}
+
+
+hr {
+    position: relative;
+    max-width: var(--header-color);
+    padding: 0;
+    margin: calc(2rem - 1px) auto;
+    background-color: var(--text-color);
+    border: none;
+    height: 1px;
+    margin-top: 2%
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+.section img {
+    max-width: 100%;
+}
+
+.img-1 {
+    position: relative;
+    margin-top: 16%;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #152b3b;
+}
+
+.section-p {
+    text-align: center;
+    font-size: 110%;
+}
+
+/*fin de configuracion*/
+
+
+/*configuracion de mi article*/
+.article {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: var(--textos-color);
+}
+
+.article-p {
+    font-size: 3rem;
+}
+
+.tex-article {
+    margin-left: -139px;
+    font-size: 1rem;
+    width: 200%;
+}
+
+/*fin de configuracion*/
+
+/*configuracion de mi senction de acerca de mi*/
+.acerca-de {
+    position: relative;
+    margin-top: -2%;
+    left: 34%;
+    width: 30%;
+    height: 300%;
+}
+
+/*fin de configuracion*/
+
+.proyec {
+    text-align: center;
+}
+
+.proyec-1 img {
+    margin-top: 10%;
+    margin-left: -49%;
+    width: 39%;
+    padding: 20px;
+    box-shadow: 2px 1px 50px var(--decoral-color);
+}
+
+.tex-h1 {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-left: 38%;
+    font-size: 3rem;
+    color: var(--textos-color);
+}
+
+.tex-p-1 {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    margin-top: -16px;
+    margin-left: 6%;
+    justify-content: space-between;
+    width: 59%;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+/*mi footer*/
+footer {
+    background-color: var(--header-color);
+    width: 100%;
+    height: 24rem;
+}
+
+.mi-footer {
+    display: flex;
+    align-items: center;
+}
+
+.mi-img-footer {
+    width: 19%;
+    height: 100%;
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+.mi-img-footer-p {
+    margin-top: -10%;
+    padding: 20px;
+    text-align: left;
+}
+
+.mi-footer-enlace {
+    margin-top: 6%;
+    margin-left: 20%;
+}
+
+.mi-footer-enlace-a {
+    margin-top: 200%;
+}
+
+.redes {
+    position: absolute;
+    display: flex;
+    margin-top: 36%;
+    margin-left: 20%;
+    align-items: center;
+}
+
+.redes a {
+    font-size: 20px;
+    color: var(--textos-color);
+}
+
+.redes p {
+    margin-top: 20%;
+    margin-left: -122px;
+}
+
+
+/* cuando la pantalla pasa de 655px se aparece el ico de menu*/
+@media only screen and (max-width: 655px) {
+
+    /*para que el logo no se tape cuando se abre el menu*/
+    .logo {
+        font-size: 50px;
+        margin-left: 20px;
+        text-decoration: none
+    }
+
+    .option-bar {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .dropdown {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        /* Inicialmente oculto */
+        width: 250px;
+        height: 100%;
+        background-color: var(--header-color);
+        padding-top: 20px;
+        transition: right 0.3s ease;
+        z-index: 2;
+    }
+
+    .dropdown a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: var(--textos-color);
+        display: block;
+        transition: color 0.3s ease;
+    }
+
+    .option-bar:hover .dropdown {
+        right: 0;
+    }
+
+    .option-bar:hover .dropdown a:hover {
+        color: var(--textos-color);
+    }
+
+    .menu {
+        font-size: 24px;
+        margin-left: auto;
+    }
+
+    /*configuracion de los botones en el menu*/
+    .link {
+        color: var(--text-color);
+        padding: 0.9rem;
+        position: relative;
+    }
+
+    .link::before {
+        content: '';
+        position: absolute;
+        top: 37px;
+        width: 50%;
+        height: 3px;
+        background-color: var(--fondo-color);
+        border-radius: 5px;
+        transform: scale(0);
+        transition: all 0.6s ease;
+    }
+
+    .link::before {
+        bottom: 0;
+        left: 0;
+    }
+
+    .link:hover::before {
+        transform: scale(1);
+    }
+}
+
+/* cuando la pantalla se agranda mas de 655px se desaparece el menu*/
+@media only screen and (min-width: 655px) {
+    .menu {
+        display: none;
+    }
+}
+
+/* pantallas grandes*/
+@media only screen and (max-width: 683px) {
+
+    /*configuracion de texto frontend*/
+    .tex-1 {
+        display: flex;
+        text-align: center;
+        left: 22%;
+        font-size: 3rem;
+    }
+}
+
+/*celulares*/
+
+@media only screen and (max-width: 527px) {
+    .tex-1 {
+        display: flex;
+        left: 19px;
+        font-size: 30px;
+    }
+
+    .logo {
+        left: -45px
+    }
+
+    .tex-p {
+        font-size: 20px;
+    }
+
+    .img-1 {
+        left: 20px;
+    }
+
+    hr {
+        top: 59px;
+    }
+
+    .article {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .article-p {
+        text-align: center;
+        font-size: 29px;
+        margin-top: 20px;
+        margin-left: -38px;
+        width: 169%;
+    }
+
+    .tex-article {
+        margin-top: 40px;
+        margin-left: -39px;
+        text-align: center;
+        width: 190px;
+    }
+
+    .proyec {
+        margin-top: 20%;
+        margin-left: -21%;
+    }
+
+    .proyec-1 img {
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+
+    .tex-p-1 {
+        margin-left: 35%;
+        font-size: 1rem;
+        width: 49%;
+    }
+
+    .mi-img-footer {
+        width: 50%;
+        margin-top: -9%;
+        margin-left: 6%;
+    }
+
+    .mi-img-footer-p {
+        width: 100%;
+        margin-top: 1%;
+        text-align: left;
+    }
+
+    .redes {
+        margin-top: 55%;
+        margin-left: 20px;
+    }
+
+    .redes p {
+        font-size: 12px;
+    }
+
+}
